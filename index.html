@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
 <style>
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{
@@ -434,6 +444,8 @@ textarea.form-control{
     line-height:21px
 }
 @media screen and (min-width:768px){
+
+    
     .form-control{
         height:32px
     }
@@ -551,6 +563,7 @@ ol,ul{
     outline:none
 }
 @media screen and (max-width:767px){
+    
     .hide-xs{
         display:none!important
     }
@@ -602,6 +615,9 @@ img,picture{
     margin:0;
     max-width:100%
 }
+
+
+
 @media screen and (max-width:767px){
     .responsive-table{
         width:100%
@@ -1747,6 +1763,8 @@ svg.icon:not(.icon--full-color) rect,symbol.icon:not(.icon--full-color) rect{
     #shopify-section-footer{
         margin-top:auto
     }
+
+    
 }
 [data-toggle-body]{
     max-height:0;
@@ -8001,11 +8019,52 @@ label.error{
      width: 30px!important;
 }
 
-/* MOBILE BODY */
-@media only screen and (min-width:700px){
-    .desktop-wrapper {
-        display: none;
+.paragraph-mobile {
+    font-family: ProximaNova-Medium;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 20px;
+}
+
+@media (min-width: 767px) {
+    .mobile-wrapper {
+    display:none;
     }
+}
+
+/* MOBILE BODY */
+@media (max-width: 767px) {
+  .desktop-wrapper {
+    display: none !important;
+  }
+
+  .footer__menu.footer__column {
+      display: none;
+  }
+
+  .footer__newsletter.footer__column {
+      display: none;
+  }
+  
+  .footer__payment {
+    display: none;
+  }
+
+  .mobile-featured-products .img-container-wrapper {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-row-gap: 50px;
+}
+
+.mobile-paragraph-left {
+     font-size: 20px;
+     color: #000000;
+     line-height: 28px;
+     text-align: left;
+     padding: 0 0 0 10px;
+}
 
 
 }
@@ -8158,27 +8217,27 @@ label.error{
 
 <!--DESKTOP -->
 <div class="desktop-wrapper">
-<div class="upper-part">
-	<img src="https://uc071a1bbbab045a2585c60fb332.previews.dropboxusercontent.com/p/thumb/AAjOcHEHU8s_zmyTuls5PSsPOT5UCBpHUHivTz1hnXOdBQGNkfiWy6YydHxw4juLEO8D5d18MWJuto_w0E8hK21kkWwaFCmYBYoRrSMOeIuUMb96wZygEavrTWGXbE_VgXUqpLeoZPn-7KY9S_LdzvsyrxR_UB2KaJCL-6DcqXKf_8Jk-r6xVM2SGgG63BWksM4y9WQKWGPUbrbyPZVtUq5ra6vpFoOpLp57VhWlaAQYEDhcDdHKDoP5-mcZ5Cgbn2q1XREmYX-lMrYlN9tPViMfGXOLE04smNUr3p3oQ6M7dGj3H12Kda6-EusThaqVApmVc9bBmrcv-y-VGFlizeyQfuecR_FVc6XYJQT4m-cIxwcGZ5nSs7jvvPmQy38RRBExhYHE7DH6hs83D7aQWtF-KQmu_Nv5i3mr5JxrGwGxxgOXBdL8fY4QaQy6GRr1rTE/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+<div class="upper-part" id="desktop-view-body">
+	<img src="https://previews.dropbox.com/p/thumb/AAgKaRt_ScFY6OYG-VKXBRTMP7D_L1NxqtN2WGWdMA5T0oCVZ7UHPDCxJBKRyCQvuhwIfRWyxAmfgOV7oGkQk0uvh7P34qkHAXSnZktQJkPjLbgiZAUE7h6mHb5J8IreNfPohGb6jLO2zKXvDzQcWsGgodYZCJjy-tGrO1shO-5zzM_HnHi5Um8w-g7iGISS_QZgI3ffYe75C3_ZmnyunPZ4IovRHposDDswTx0VQBWKXqlQfyK9YhgYbswwjsB8n1L141aFenrSvLXfBqYQDrOGXMFFMY2IbU1KAriqxaQ_QfuWr9e-itkO0LNvxfpmwfgCP7WgAvcb5Fh5jyO07GuT/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
 </div>
-<div class="content-container">
+<div class="content-container" id="desktop-view-body">
 	<div class="paragraph">
     <p>This all-white combo is perfect for a night out or a </br> relaxing morning in. Pair with your best outfit to make</br> a statement.</p>
 	</div>
 	<div class="middle-part">
-		<img src="https://ucbefe31871d0a48a6ff00b56976.previews.dropboxusercontent.com/p/thumb/AAhUpkLi1XrGV077nmtfVeLim-Q5LG38nHiofUJDtE08Ahi6X-OnwDxq9GWUlPzhcs9QzDRjH5HgjgLNUz7om_nVTha9QDdkg6GmMsfTyeteBmV4lgc-iHnAkUKJlB346XwBgjzILbgHAy-uTZRLB8qEC2PeCYGZ7Iv1esWUv87jBgWgUYIVIL-ndDU1kLKsX_persf3zSpGVTD293JBb11nBFTO6vbg9-kiw7KNdglS430uYN2a-BqB3UKQ5_VlTqpk4e1f5Fdm_y3S0LabuX3EsgZ_3tKi-igZGgGJQjWX6VmRR0r8A8nHm_DY7YHDPLsHSYhYDBgZHDWk5JgdRVnvyCaL0RU3gs0DQNkVdNBlsA/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+		<img src="https://previews.dropbox.com/p/thumb/AAgAV3XjhkDCik4OtU5zj47ZLptyUqmZGj5RtrNIdltWgk-EIkAKu2GljxhpPUeTraqfRLkdzhAMTZ6kaLCsyhqexZPotKQSk6hxAnJj9LHsz2336jNndVFFcZt3P92AzVNN6Qb-3T-tnf5pNnKR91cEUFSbx-5CE3cLWd3AJ_1mfl1uJJ4x-ssmsmps6_M-blJ-ZILq73u8DYcKjqfQv31kuZathdPsQReFLXTPWJIQo3TJz6VZLL_x3e1DR1Qv0O-znmqo8W2p_gvgSFZRYuqRhAdsnvYdz511eJvbA8RvvceMTljZufeBk1wIm-eBO7gxipfX2q7aPyQC6wqyD-V7/p.jpeg?size=1280x960&size_mode=3" width="100%" alt="">
 	</div>
 	<div class="paragraph">
 		<p>A bright blue strap with unique details is perfect for a </br> day by the pool. You'll be ready to the next adventure </br> with this accent piece.</p>
 	</div>
 	<div class="middle-part">
-		<img src="https://uc5efb81966f3cbe899895fbed62.previews.dropboxusercontent.com/p/thumb/AAizp7q2IyLx-R-RQ7U8CRP71Y4S1sxLGb0UxF8gnTEIq3tjAbgDXD84PC1L633-_u188_lX0FQhSjgArT4Ohykq4YPt7KtuKQT-4_bxlgIEd3wFJE9J7d49ea2ToqpTgC584Fya5hjvElfkuJ9dC7K_VFAcBw8iJr9yeVikCCXUdOzmhD-a1YgUU9vASUmJzRU6vthKw8g_SwXjuli1-_gUBiL5JdcoYybVUdKVlkz-PpjFLd-AWQgh18lX3-YHjjeUDe_UJryNQu13MLHtbFZB90rgjMWMSYWADkMixEat3FryZLjY2W3nikPbWN1Oy4vw6HqT0HGqjtLrKvUmelRqPpdN4xukLn-Kn2R37ahcCA/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+		<img src="https://previews.dropbox.com/p/thumb/AAgVVS-7Rj9LbIHEwkxmdoyirgCSPjzHxSrxIXifxEF_RkUgowf9dyLTRIvkIo33w08zUIJJzlOXSk03fBDA9-vEa_ehGXyBQY38U4cYBdToTrXBpNT56O9dOlSkwwHYFDQxgzlDJ65liNzW3cAQ-9B0UXNeYUi9E8cljf2zdy4tyaTBe-5ZeWB8eSPyfCnGADgEPUX6cyW_uUTxW1G-1eIOg-44Gw0Rn5WGUnJ-9GlOO9UMLBEgEzQM5p07jy_jwduGgNYWMw2dElARMYdHAOt5AAdZgg3Gh56hcK27DP8WYWI3sqB8IKr1RHQko23WjoRxqT95Lq42kuJb0n4_t-rf/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
 	</div>
 	<div class="paragraph">
 		<p>Unwind with a bold colors to make sure you always </br> stand out. Stay active with a rubber strap on your wrist.</p>
 	</div>
 	<div class="middle-part">
-		<img src="https://ucfb2cbf797ebf7d2f618403c924.previews.dropboxusercontent.com/p/thumb/AAjgwMms_btCCX8AUDPFihXisXoNaYjSuvTztCP_BE0TabXJcJP6st3nfdcbh7FJvrV9ByZEAcXT1nTKOoFvyKCWuoKhUQDDU6gdB5aOw18_LZbS1R3ALjuvYsgj6NyHzYCOffNj2aZJe_9FEhjT84LuGDulY8iAA0XjTIPiBVEK-1ak7D8muXf5UUzGxrZyrxtzbBr62mVARyMcPEGdN1meyzvlEhQQ3aBHVUPCi3m5y5mqXRVQ0Hgue2yEUaaKdfh2hClfQkO_KzKgphZp2z_M3rJNeaY7CwbF7d1jCF3stuSQfrsVlz2W2kPT1fVv7hA0bhaEToiZhJ2QqKvlKDGIQ0kZ7qXmdyzD-QsNNH8VvA/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+		<img src="https://previews.dropbox.com/p/thumb/AAjmav0-j9wRp9un5fG0pAx_o0qOCQvbV0-9AHKksPQeZSJ2TSC_x3O6QJWw09JcMZ3t9oNVOppAVk3QHT5Y03PVkPu2LH1XBSDsh9boTL_hCKh9DmuDd-ncjnOprQOuAcZznh3ZUORnRMGheHIphDAAudnEGvIqyVUbLVAx9nP3KtEFOlTQ5m8ZEFzDnW0uHu7JFWSFO4yHkbuIwXTQQ7QZH8GlHu4ZOA7CRy8S3oJ8imAsyUxZ4w8O6NUTnRensOEv94rjAcRxd3j0xO1JbfMLDH_q_SeZDURcK_MkbdrEQr_PYLAGKC6I1j_nZhvEae7k8xQbrfDh2kqggqjxub5r/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
 	</div>
 	<div class="paragraph">
 		<p>Follow along with #Zinvaders to see where our final </br> destination will be. What's the next stop for your ZINVO?</p>
@@ -8256,6 +8315,120 @@ label.error{
 </div>
 </div>
 <!--DESKTOP END-->
+
+<!--MOBILE-->
+<div class="mobile-wrapper">
+    <div class="upper-part" id="desktop-view-body">
+        <img src="https://previews.dropbox.com/p/thumb/AAhH0LyXd0P0dg0yTwFWqnu5-Lfk0cbEvK4pvhPzQ2VXppk6QXs60r8IugT2EEAqhoQ-BJ1WgWzCpViZPrGW6cK2gVgaTcCjoSGDr4tyWnPK8Z8kz7F2EiykxXWoYsGDHmHWWb7OdSk6whaoO10IF8PoE-T-GvdwdeIzeC2H68kF6hI6QjPaiK__R7dEBNJl0rqUoHKEUTFlpsJsxA1_uv5r9GWNXKfxoPcrhvDcjY5wEGQOglbITOo4WORweO-kaUQ84dOj8RpYhy6Z-AMpmoA6l2ce1KyceqlGIXqoAZ75DnJFT3Rxiyh02FNP53JJWEAJ7OuSfQmak3u6_G2PV2L6/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+    </div>
+    <div class="mobile-content-container">
+        <div class="paragraph-mobile">
+        <p>Summer may be coming to an end, but travel never stops. Bali is the perfect tropical escape to show off your unique watches.</p>
+        </div>
+        <div class="middle-part">
+            <img src="https://previews.dropbox.com/p/thumb/AAiQwzZeJWggYeBSxHpeKJgBJ2x3krM9bcHK82q7rQGGTj4o6A2Mu-a7TMpfKL9LN7lgNkFx80tKVG4HGcszP7x4tm444EAExkme7l2VptanhR1Gjifo6nPd4bFLo42bi1uOuCnHekX-l8b8hfe7hIL9SftYmj_0gVq2bpZYTqqCwyf4vRkx8UiKn2lMrdKWQQvHEdhiSc3Q6RlAFvkgCS008eWG2CIOta92iDZLVBYaI7P_LUFXGMtOB1zL6G0VC9IS5vd_Z0trg-a1Ewd-lWm-780DR7M3ptiYOWGUeCmIV-U1TaDW2Kbt1qbJDZzBR_deBbD9-ppBiiLpNsmKyd6g/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+        </div>
+        <div class="paragraph-mobile">
+            <p>This all-white combo is perfect for a night out or a relaxing morning in. Pair with your best outfit to make a statement.</p>
+        </div>
+        <div class="middle-part">
+            <img src="https://previews.dropbox.com/p/thumb/AAgJROTatXvO2BrsRp7aDDbP9IdYy10I637ssgXp_Q_yTTmZGA-y6G_nqZEM68OXW--3Hp5cs_a5IAJLLR9qkvhhuzQBIdijNiai966tDSuDbF6_nyOt93FUSmxPrUiVUxDaY_ISaCjSAst3sEMpltmYP4TEJd8Gzmq6H2yWaYSElTVaCdG5jY7Y9yhpEFASMI6CAfko37Dnijcq3zYrYvhRMdCKngKm1E26jkI2r9bwbAfiKdmmK5pgGeH63lq8sXmlMrrBaQg6eY_T6z4DM_BFNOFnevhG0rcHHk_K9Zl-ZGkYe8MiSCEjVABG2VM2HTIT-SxA77DeZLwd91Df0K9W/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+        </div>
+        <div class="paragraph-mobile">
+            <p>A bright blue strap with unique details is perfect for a day by the pool. You'll be ready to the next adventure with this accent piece.</p>
+        </div>
+        <div class="middle-part-mobile">
+            <img src="https://previews.dropbox.com/p/thumb/AAhw9D2KTUPqli8GbxnzC9PobEqSdu75IrSd7UWRtWzB6PAxa6Y5L7eqGKOYNVpumFNggwGmq6PIQbpLpQYMvDHBBwxkY2QXissA-XkcB3rMioj5wHeHqvAhFuLIQP-j3qHDlpUlIPW_R4PJR6GaDxZ65jWYWReqYnnnwrpZTgGEVchv_6U8QGxQTxN-HWsiEdQWcGXi2xFAmwmGHib4WpJWotHUWMSktRxvdFNzZfyfxAmqc0p8Z9Cy88--pW_aJ_O8OGOXKm2aJSZ2kS2C25o3jPnoWYe0gBOPpoCxTkPHIb7IItdn6K2MHYBQU1eQTdDPbbSKFl0anME8vyZ-WmoF/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+        </div>
+        <div class="paragraph-mobile">
+            <p>Unwind with a bold colors to make sure you always stand out. Stay active with a rubber strap on your wrist.</p>
+        </div>
+        <div class="middle-part-mobile">
+            <img src="https://previews.dropbox.com/p/thumb/AAiMgbk9ianI7hu0BsxAT5CWCSCY6lyMn6U-DUR9_0QaNF0575Nnemy_MZX0M60MEd-Z0dZ0Nv_b_wTRCTmKllI-A-ZNGKj0GYUA_ICojsCg7V2p_9NHGMYD5AyWXPp4fCzcGtToKI2XiHlaRejpovjoD1-XeoCTXPCm21KDP3adYhbi2xkX-bnrNXoIlLtWMDNpSdkuzPpJK43f_ULq6RDQZasNMKnSWSTtemGLQBCM2IwSpfmztvTsWrxm_SQL3g9gNKmFL9GDzdcZixnY6I7IUdP9Q8DbqX4HLAkfjG_bakYf-vUPtrUBdapk1bRVTCNIMqIi4HHynN3x5qvrdcyb/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+        </div>
+        <div class="middle-part-mobile" style="padding-top: 20px;">
+            <img src="https://previews.dropbox.com/p/thumb/AAieldh-CN7ZrTeIws--azsGiQ53Kong9SZpWRyws_nbzxZVeRwVI-AgpVCuETw9v8CD5vA6AQFQINu5gkPbL4q5x5f6xBaGlGUvUt90_elBPy3bypqVVIL_zO0n8hW6I06-OPvwCZfdW0JCi181X0kXUDNkeU9fvm7p4D4tbo2LItRN3lrLnrwMNKzbC2--VaK0yFISkfKnX082SaxyulANRgoEGfDTQxUG0R2MbZf6n1t1cHebgFJY_mX8nSy5FJLlAnbLLQVWuwqr-YI0ap0H73zalauHKdcbfn4FudlYRoTaYGHj4KWHPCQV6sN2_oH4xZBfK1QhyBnBhcTufZkj/p.jpeg?fv_content=true&size_mode=5" width="100%" alt="">
+        </div>
+        <div class="paragraph-mobile">
+            <p>Follow along with #Zinvaders to see where our final destination will be. What's the next stop for your ZINVO?</p>
+        </div>
+    <div class="featured-products-title">
+          FEATURED PRODUCTS
+        </div>
+        <div class="mobile-featured-products">
+        
+            <div class="img-container-wrapper">
+                <div class="img-container">
+                    <a href="https://zinvowatches.com/products/blade-marine">
+              <img src="https://i.postimg.cc/Kzm9ns2j/marine-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://zinvowatches.com/products/blade-bold">
+              <img src="https://i.postimg.cc/N06J2vZZ/bold-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://zinvowatches.com/products/blade-blaze">
+              <img src="https://i.postimg.cc/fR0gZ9Cz/blaze-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://zinvowatches.com/products/blade-onyx">
+              <img src="https://i.postimg.cc/kG4fH6Dd/onyx-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="img-container" style="padding-top: 10px;">
+                    <a href="https://zinvowatches.com/products/blade-magic">
+              <img src="https://i.postimg.cc/xdDpd1pK/magic-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://zinvowatches.com/products/s7-miami-blue">
+              <img src="https://i.postimg.cc/X7tQ2vbT/s7-miami-blue-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://zinvowatches.com/products/s2-white">
+              <img src="https://i.postimg.cc/j2FZYxJn/s2-white-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="img-container">
+                    <a href="https://zinvowatches.com/products/s4-red">
+              <img src="https://i.postimg.cc/qBbm3LZB/s4-red-2x.jpg" alt="">
+            </a>
+                </div>
+                <div class="mobile-paragraph-left">
+                    <p>Share with your friends:</p>
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="https://i.postimg.cc/9FkNvpGg/facebook-logo-button-10x.jpg" width="35px" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="https://i.postimg.cc/hPX2bdHL/twitter-logo-button-10x.jpg" width="35px" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="https://i.postimg.cc/4dwWwbf5/pinterest-logotype-circle-10x.jpg" width="35px" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<!--MOBILE END-->
+
+
 <div id="shopify-section-footer" class="shopify-section">
 	<footer class="footer" id="footer">
 		<div class="container">
@@ -8396,3 +8569,6 @@ label.error{
 		</div>
 	</footer>
 </div>
+
+</body>
+</html>
